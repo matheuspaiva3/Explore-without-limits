@@ -1,0 +1,281 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+:root {
+  font-size: 62.5%;
+  --hColor--ewae: hsl(320, 69%, 42%);
+  --pColor--heheheha: hsl(244, 38%, 28%);
+  --firstBackground--color: hsl(283, 47%, 97%);
+  --mainBackground--color: hsl(244, 38%, 28%);
+  --boxBackground--color: hsl(0, 0%, 100%);
+  --button--color: hsl(242, 50%, 38%);
+  --buttonHover--color: hsl(242, 50%, 28%);
+}
+body,
+input,
+textarea,
+button {
+  font-family: "Mulish", sans-serif;
+  font-size: 1.6rem;
+}
+#arrow {
+  width: 5.8rem;
+  height: 10.5rem;
+  margin-bottom: 9rem;
+}
+.intro {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  background-color: var(--firstBackground--color);
+  padding: 0 4rem;
+  min-height: 100%;
+}
+#astronauta {
+  width: 36.4rem;
+  height: 37rem;
+  margin-bottom: 1.7rem;
+}
+h1 {
+  color: var(--hColor--ewae);
+  font-size: 3.2rem;
+  font-weight: 900;
+  line-height: 2rem;
+  margin-bottom: 1rem;
+}
+#astronauta_P {
+  font-size: 2rem;
+  line-height: 2.5rem;
+  font-weight: 600;
+  color: var(--pColor--heheheha);
+  margin-bottom: 3.4rem;
+}
+main {
+  min-width: 100%;
+  min-height: 100%;
+  padding: 5.2rem 4rem;
+  background-color: var(--mainBackground--color);
+}
+.box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5rem;
+}
+.boxes {
+  border-radius: 2rem;
+  padding: 2.6rem 5.6rem 2.6rem 2.6rem;
+  background-color: var(--boxBackground--color);
+}
+.moons {
+  margin-bottom: 2rem;
+}
+.textBox {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  max-width: 26.5rem;
+}
+h2 {
+  font-size: 2.8rem;
+  font-weight: 900;
+  line-height: 3.6rem;
+  color: var(--hColor--ewae);
+}
+p {
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 2rem;
+  color: var(--pColor--heheheha);
+}
+section {
+  background-color: var(--firstBackground--color);
+  height: 100%;
+  padding: 7.8rem 4rem 6.4rem;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+  max-width: 35rem;
+  margin: 0 auto;
+}
+#h2Form {
+  margin-bottom: 2rem;
+  font-size: 3.2rem;
+  line-height: 4rem;
+}
+input {
+  border-radius: 1.6rem;
+  padding: 1.6rem;
+  border: 2px solid var(--mainBackground--color);
+  font-weight: 600;
+  color: var(--pColor--heheheha);
+}
+#inputName::placeholder{
+  background-image: url(./assets/person.svg);
+  background-repeat: no-repeat;
+  /* background-position: 4% center; */
+}
+#inputName:focus{
+  border: 4px solid var(--mainBackground--color);
+}
+#inputEmail::slotted{
+  border: 4px solid var(--mainBackground--color);
+}
+#inputEmail::placeholder{
+  background-image: url(./assets/Vector.svg);
+  background-repeat: no-repeat;
+  /* background-position: 4% center; */
+}
+input::placeholder,
+textarea::placeholder {
+  color: var(--pColor--heheheha);
+  font-weight: 600;
+}
+input::placeholder {
+  padding-left: 3.4rem;
+}
+textarea {
+  border-radius: 1.6rem;
+  padding: 1.6rem;
+  border: 2px solid var(--mainBackground--color);
+  font-weight: 600;
+  color: var(--pColor--heheheha);
+  min-height: 12rem;
+}
+textarea:focus{
+  border: 4px solid var(--mainBackground--color);
+}
+button {
+  padding: 1.6rem 1rem;
+  border-radius: 1.6rem;
+  max-width: 15rem;
+  background-color: var(--button--color);
+  border-style: none;
+  color: var(--boxBackground--color);
+  font-size: 1.4rem;
+  font-weight: 700;
+  line-height: 2.4rem;
+  margin-bottom: -4.8rem;
+}
+button:hover{
+  background-color: var(--buttonHover--color);
+  cursor: pointer;
+  transform: scale(1.1);
+}
+footer{
+    padding:3.2rem 1.6rem;
+    background-color: var(--button--color);
+    text-align: center;
+}
+footer p{
+    color: var(--boxBackground--color);
+}
+
+@media(min-width: 1250px){
+  .intro{
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: flex-start;
+    min-height: 100%;
+    width: 100%;
+    padding: 0 2rem 0 10rem;
+  }
+  #astronauta {
+    width: 71.3rem;
+    height: 73rem;
+    margin-bottom: 10rem;
+    object-fit: cover;
+  }
+  h1{
+    font-size: 5.8rem;
+    line-height: 7.2rem;
+  }
+  .intro-box{
+margin-top: 31rem;
+  }
+  #astronauta_P{
+    font-size:3.2rem;
+    line-height: 4rem;
+    margin-bottom: 18.0rem;
+  }
+  .intro-box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .box{
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 0;
+  }
+  .boxes{
+    padding: 3.2rem 1.2rem 4.8rem 3.2rem;
+    min-height: 44rem;
+
+  }
+  .textBox{
+    min-width: 32rem;
+    gap: 2.4rem;
+  }
+  .textBox h2{
+    font-size: 3.3rem;
+    line-height: 4rem;
+    width: 100%;
+  }
+  .textBox p{
+    font-size: 1.8rem;
+    line-height: 2.4rem;
+  }
+  .moons{
+    margin-bottom: 4rem;
+  }
+  section{
+    background-image: url(/assets/image\ 11976.svg);
+    background-repeat: no-repeat;
+    background-position: 100% 100%;
+    padding: 9.4rem 73rem 9.4rem 10rem;
+  }
+  form{
+    margin: 0;
+    min-width: 60rem;
+    min-height: 42rem;
+  }
+}
+.boxes:hover{
+  transition: 0.5s 0.2s ease-out;
+  transform: scale(1.1);
+  filter:saturate(1.5) drop-shadow(0 0 0.5rem var(--hColor--ewae));
+}
+.textBox,
+.moons{
+  --delay:0.4s;
+  animation: appear 0.6s var(--delay) linear backwards;
+}
+footer{
+  --startFooter: 100%;
+  animation: up .2s;
+}
+@keyframes appear {
+  from {
+    opacity: 0;
+    transform: translateY(2rem) scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0)scale(1);
+  }
+  
+}
+@keyframes up{
+  0%{
+    transform: translateY(var(--startFooter));
+  }
+}
